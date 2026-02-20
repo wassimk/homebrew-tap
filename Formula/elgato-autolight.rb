@@ -1,7 +1,7 @@
 class ElgatoAutolight < Formula
   desc "Automatically toggle Elgato lights when your Mac camera activates"
   homepage "https://github.com/wassimk/elgato-autolight"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   depends_on "wassimk/tap/elgato-light"
@@ -9,10 +9,10 @@ class ElgatoAutolight < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/wassimk/elgato-autolight/releases/download/v#{version}/elgato-autolight-Darwin-aarch64.tar.gz"
-    sha256 "84ed051d175f5755bf4ea2036220d3e366ded5fb2b9afa59909edfed4d5bbbb0"
+    sha256 "df99673679b309605369429c596eff6e0c526acbb3232296b1fbed800d0f3b53"
   elsif Hardware::CPU.intel?
     url "https://github.com/wassimk/elgato-autolight/releases/download/v#{version}/elgato-autolight-Darwin-x86_64.tar.gz"
-    sha256 "b95601b07bf9da1119020974fd67a9b41f66b666609ec3ae22e6f9df863ff231"
+    sha256 "fdf3792b45b2536996f5c0f03366d8d62fe5e4484debea596b16791a8e41417f"
   end
 
   def install
