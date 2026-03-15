@@ -5,21 +5,21 @@
 class Granary < Formula
   desc "Export Granola meeting notes and transcripts to markdown"
   homepage "https://github.com/wassimk/granary"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/wassimk/granary/releases/download/v0.2.1/granary-Darwin-amd64.tar.gz"
-    sha256 "655bb93b9cf4cf62df00b62a29bea9ff1f55e6900919447dc83aac4cd09de901"
+    url "https://github.com/wassimk/granary/releases/download/v0.2.2/granary-Darwin-amd64.tar.gz"
+    sha256 "08df8501b99ea1dec414ba902d9188fb6cd0b41672fb2cb960dbe532df888dd0"
 
     define_method(:install) do
       bin.install "granary"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/wassimk/granary/releases/download/v0.2.1/granary-Darwin-arm64.tar.gz"
-    sha256 "4cbdac6e698e6102416da6df90fce71ef697a517de7c767addf2bfd2c028b2a0"
+    url "https://github.com/wassimk/granary/releases/download/v0.2.2/granary-Darwin-arm64.tar.gz"
+    sha256 "19924ef411d50c3f89bb56606ece67b9e6d21cf03c28c43b266cff0a9a179d19"
 
     define_method(:install) do
       bin.install "granary"
