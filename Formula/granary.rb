@@ -5,21 +5,21 @@
 class Granary < Formula
   desc "Export Granola meeting notes and transcripts to markdown"
   homepage "https://github.com/wassimk/granary"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/wassimk/granary/releases/download/v0.3.0/granary-Darwin-amd64.tar.gz"
-    sha256 "ae307ba8ecb757e59ef7fcac3a793cdacaf42dc5625f9d166b4d1d9f486f0266"
+    url "https://github.com/wassimk/granary/releases/download/v0.3.1/granary-Darwin-amd64.tar.gz"
+    sha256 "ef2dd8b720762d4ae3abb5356cf5a79af35cc7a15c844681824d20188abe5075"
 
     define_method(:install) do
       bin.install "granary"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/wassimk/granary/releases/download/v0.3.0/granary-Darwin-arm64.tar.gz"
-    sha256 "8f34c913cc60f134885ff4513d6c00d621b6140a996bb1cddd5411d7c0b341ae"
+    url "https://github.com/wassimk/granary/releases/download/v0.3.1/granary-Darwin-arm64.tar.gz"
+    sha256 "5c728326d2bfa02b783fdc25c536384376c9787884d8ca8b197ac89947fc0ac6"
 
     define_method(:install) do
       bin.install "granary"
@@ -28,7 +28,7 @@ class Granary < Formula
 
   def caveats
     <<~EOS
-      To start granary as a background service (exports every 6 hours):
+      To start granary as a background service (exports every 2 hours):
         granary install
 
       To remove the background service:
