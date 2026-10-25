@@ -1,17 +1,17 @@
 class Tmignore < Formula
   desc "Exclude developer dependency directories and arbitrary paths from macOS backups"
   homepage "https://github.com/wassimk/tmignore"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   depends_on :macos
 
   if Hardware::CPU.arm?
     url "https://github.com/wassimk/tmignore/releases/download/v#{version}/tmignore-Darwin-aarch64.tar.gz"
-    sha256 "2be7400a9c7a8e25e9715120b7077d1fce579c9634453dbbefb8556a51ce46b9"
+    sha256 "7ba9bd910403151aaa56f4de22fc3fb7d0f395ea542358b49157e4c748fe0df4"
   elsif Hardware::CPU.intel?
     url "https://github.com/wassimk/tmignore/releases/download/v#{version}/tmignore-Darwin-x86_64.tar.gz"
-    sha256 "d882854520f6869e45be40531074c2255da2931864714a9e991c6b31ece750d2"
+    sha256 "578bc8291ea076d153390d2e866bf73995d416e685a1a08fcc435d085e3d6f9d"
   end
 
   def install
