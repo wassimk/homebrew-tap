@@ -8,10 +8,10 @@ class Tmignore < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/wassimk/tmignore/releases/download/v#{version}/tmignore-Darwin-aarch64.tar.gz"
-    sha256 "7ba9bd910403151aaa56f4de22fc3fb7d0f395ea542358b49157e4c748fe0df4"
+    sha256 "553b2398bedd98bc5237ace5e0a82328794f793a96b0b9b97b7ae7908c9b8b8e"
   elsif Hardware::CPU.intel?
     url "https://github.com/wassimk/tmignore/releases/download/v#{version}/tmignore-Darwin-x86_64.tar.gz"
-    sha256 "578bc8291ea076d153390d2e866bf73995d416e685a1a08fcc435d085e3d6f9d"
+    sha256 "faa1b21583f775aebfc028836b685a0a69ea72a84de293d123e84728d3dfe680"
   end
 
   def install
