@@ -1,7 +1,7 @@
 class ZoomAutostatus < Formula
   desc "Automatically set your Slack status while you're in a Zoom meeting"
   homepage "https://github.com/wassimk/zoom-autostatus"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   depends_on "wassimk/tap/st"
@@ -9,10 +9,10 @@ class ZoomAutostatus < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/wassimk/zoom-autostatus/releases/download/v#{version}/zoom-autostatus-Darwin-aarch64.tar.gz"
-    sha256 "9c89f74ed6dd3e63abbb31b46da3742cdbc43f29c231174e025709d9d0147190"
+    sha256 "d9ad9700da1c1d2081c3cdf29c1189b7d53a24db7bd65c31722fb1e4b18e2588"
   elsif Hardware::CPU.intel?
     url "https://github.com/wassimk/zoom-autostatus/releases/download/v#{version}/zoom-autostatus-Darwin-x86_64.tar.gz"
-    sha256 "91e3f00007ccb644a19351376f9cf8e98f7bff0e4567e94664c4375b7f69ddb8"
+    sha256 "7fa9bad06de3b4b2370b2a272489bc0abe1a0acf96e005a757f8df2427033f7a"
   end
 
   def install
