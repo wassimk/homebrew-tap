@@ -1,17 +1,17 @@
 class St < Formula
   desc "Set your status across Slack and GitHub with a single command"
   homepage "https://github.com/wassimk/st"
-  version "0.6.1"
+  version "0.6.2"
   license "MIT"
 
   depends_on :macos
 
   if Hardware::CPU.arm?
     url "https://github.com/wassimk/st/releases/download/v#{version}/st-Darwin-aarch64.tar.gz"
-    sha256 "5caf536a14aab7ebc83b38b9612456ab1d55de668e7318e6324037c6882e7a62"
+    sha256 "4874b660be850823d27bfa8f6b52bcdc0d9c51798a2aa47399436413a56235c4"
   elsif Hardware::CPU.intel?
     url "https://github.com/wassimk/st/releases/download/v#{version}/st-Darwin-x86_64.tar.gz"
-    sha256 "dccaa521f210b2de2181d7c4433c4cafbec9fecd71e2c7b55ccd2d2b658b367b"
+    sha256 "e781da78102a06afc82448d83fd6da22f9ddfb2ab6dc6bc17dda3c22ae19ec6a"
   end
 
   def install
