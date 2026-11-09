@@ -1,17 +1,17 @@
 class CalendarAutoblock < Formula
   desc "Block time on your work Google Calendar when personal appointments fall during your work day"
   homepage "https://github.com/wassimk/calendar-autoblock"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   depends_on :macos
 
   if Hardware::CPU.arm?
     url "https://github.com/wassimk/calendar-autoblock/releases/download/v#{version}/calendar-autoblock-Darwin-aarch64.tar.gz"
-    sha256 "13e9aee1b7fac62bac8c73ec1d6b1a1d4d536942412141a485328c8a9a73f5af"
+    sha256 "7cc09f4ab3890ee81c7545a1c393e4d1e544bf0df68dd36d3ec660ba602ac06d"
   elsif Hardware::CPU.intel?
     url "https://github.com/wassimk/calendar-autoblock/releases/download/v#{version}/calendar-autoblock-Darwin-x86_64.tar.gz"
-    sha256 "cbb47813d1b691e1fca241538c5eebafc076ff43360728f9188c94f47acf132b"
+    sha256 "ebed11369b9811153d2d3b92075b6825b422028ad25acf4747e37f18a1a5e4c2"
   end
 
   def install
